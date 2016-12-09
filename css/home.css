@@ -1,0 +1,17 @@
+.aboutus{
+    background-image: url("../images/aboutus3.jpg");
+    padding-top: 1px;
+
+}
+.aboutus h3{
+    text-align: center;
+    color: #363636;
+
+    font-weight: bold;
+}
+.aboutus p{
+    padding-left: 150px;
+    padding-right: 150px;
+    font-size: 14px;color: #3a3a3a;
+    text-align: justify;
+}

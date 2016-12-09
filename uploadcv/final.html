@@ -1,0 +1,139 @@
+<html>
+
+<head>
+
+   <link rel="stylesheet" type="text/css" href="styl.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.min.js"></script>
+	   <script>
+        $(document).ready(function(){
+		alert("ashish");
+
+
+            $("#submitform").validate({
+
+
+                rules: {
+                    midterm: {
+                        required: true,
+                        min: 0,
+                        max:1
+                    },
+                    attendence: {
+                        required: true,
+                        min:0,
+                        max:1
+                    },
+                    assignment:{
+                        required: true,
+                        min:0,
+                        max:1
+                    },
+                    preboard:{
+                        required: true,
+                        min:0,
+                        max:1
+                    },
+                    internalscore:{
+                        required: true,
+                        min:0,
+                        max:1
+                    }
+                },
+                messages: {
+                    midterm: {
+                        required: "Enter the attendence",
+                        min:"Enter number between 0 and 1",
+                        max:"Enter number between 0 and 1"
+                    },
+                    attendence: {
+                        required: "Enter the attendence",
+                        min:"Enter number between 0 and 1",
+                        max:"Enter number between 0 and 1"
+                    },
+                    assignment:{
+                        required: "Enter the assignment",
+                        min:"Enter number between 0 and 1",
+                        max:"Enter number between 0 and 1"
+                    },
+                    preboard:{
+                        required: "Enter the participation",
+                        min:"Enter number between 0 and 1",
+                        max:"Enter number between 0 and 1"
+                    },
+                    internalscore:{
+                        required: "Enter the project involvement",
+                        min:"Enter number between 0 and 1",
+                        max:"Enter number between 0 and 1"
+                    }
+
+
+                },
+                highlight: function (element) {
+                    $(element).parent().addClass('error')
+                },
+                unhighlight: function (element) {
+                    $(element).parent().removeClass('error')
+                },
+                submitHandler: function(form) {
+                    form.submit();
+                }
+            });
+        });
+    </script>
+
+    <style>
+        #submitform .error{
+            color:darkred;
+            font-weight: lighter;
+            font-family: cursiveewr;
+        }
+    </style>
+</head>
+
+<body style="background-image: url('http://feelgrafix.com/data/background/background-15.jpg');">
+<h1 class="text-center" style="color: #fff"> Student Result Prediction</h1>
+<br>
+      <div class="col-md-4">
+          <img src="https://www.exambook.in/images/result.png" height="400px" width="550px"/>
+      </div>
+      <div class="col-md-4">
+          <div class="well" style="width: 100%;margin: auto;border:5px solid #3573a3;border-radius: 10px;background: url('http://wallpapercave.com/wp/f2nbsPJ.jpg') ">
+
+          <form class="horizontal" role="form" id="submitform">
+                    <div class="form-group" style="position:relative;">
+                          
+                       <label for="midterm" style="color:#fff; font-size:14px" >Mid-term Result:</label>
+
+                       <input class="form-control input-lg" id="midterm" name="midterm" type="text">
+                        <p class="error"></p>
+                       <label for="preboard" style="color:#fff; font-size:14px">Pre-board Result:</label>
+                       <input class="form-control input-lg" id="preboard" type="text" name="preboard" >
+                        <p class="error"></p>
+                       <label for="assignment" style="color:#fff; font-size:14px">Assignment Scores:</label>
+                       <input class="form-control input-lg" id="assignment" type="text" name="assignment">
+                        <p class="error"></p>
+                       <label for="internalscore" style="color:#fff; font-size:14px">Internal Score:</label>
+                       <input class="form-control input-lg" id="internalscore" type="text" name="internalscore">
+                        <p class="error"></p>
+         <label for="attendence" style="color:#fff; font-size:14px">Attendence:</label>
+                       <input class="form-control input-lg" id="attendence" type="text" name="attendence">
+                        <p class="error"></p>
+         <button type="submit" class="btn btn-info btn-lg">Predict</button>
+                     
+              </div>
+            </form>
+          </div>
+
+      </div>
+      <div class="col-md-4">
+          <img style="height: 500px;width: 440px" src="http://clipartix.com/wp-content/uploads/2016/06/College-girl-studying-clipart-clipart-kid.gif"/>
+        </div>
+    </body>
+    </html>
+
+
