@@ -34,12 +34,16 @@ if(isset($_POST['submit']))
 
     </head>
     <body>
-    <div class="container">
 
 
 
             <?php include 'header.php' ?>
-            <div class="contact-left col-sm-6" style="background-color: #2a201e;color: #ffffff;">
+<div class="container">
+            <h2 class="text-center">
+                Contact Us
+            </h2>
+    <hr>
+           <!-- <div class="contact-left col-sm-6" style="background-color: #2a201e;color: #ffffff;">
                 <h1>
                     Contact Us
                 </h1>
@@ -68,8 +72,8 @@ if(isset($_POST['submit']))
 
 
                 </form>
-            </div>
-            <div class="contact-right col-sm-6 well" style="float: right;background-color: #ffffff">
+            </div>-->
+          <!--  <div class="contact-right col-sm-6 well" style="float: right;background-color: #ffffff">
 
                 <h3>Get in touch</h3>
 
@@ -87,18 +91,98 @@ if(isset($_POST['submit']))
                 </div>
 
 
-                <div style="width: 100%">
-                    <a href="https://www.google.com.np/maps/place/Full+Bright+Consultancy+(Pvt.)+Ltd./@27.6969744,85.3485117,15z/data=!4m5!3m4!1s0x0:0xf086f74ee02eda19!8m2!3d27.6963664!4d85.3523312">View Larger Map</a>
-                    <iframe width="100%" height="300" src="http://www.mapi.ie/create-google-map/map.php?width=100%&amp;height=300&amp;hl=en&amp;q=Sinamangal%20Rd+(Full%20Bright%20Consultancy%20(Pvt.)%20Ltd)&amp;ie=UTF8&amp;t=p&amp;z=16&amp;iwloc=A&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="http://www.mapsdirections.info/pt/crie-um-google-map/">Gerador de iFrame do Google Maps</a> on <a href="http://www.mapsdirections.info/pt/">Calcular Rota</a></iframe>
-                </div>
+            </div>
+-->
+
+            <div class="row pad">
+                <div class="col-md-4">
+                    <div class="contact-detail-box">
+                        <i class="fa fa-book fa-3x text-colored"></i>
+                        <h4>Full Bright Consultanct (Pvt. ) Ltd</h4>
+
+                        <p>Engineers, Managers, Planners and <br> Development Strategies</p>
+                    </div>
+                </div><!-- end col -->
+
+                <div class="col-md-4">
+                    <div class="contact-detail-box">
+                        <i class="fa fa-th fa-3x text-colored"></i>
+                        <h4>Get In Touch</h4>
+                        <abbr title="Phone">Phone:</abbr> +977 1 4468118, +977 1 4468749 <br>
+                        Email: <a href="#" class="text-muted"> fab@mos.com.np, info@mos.com.np</a>
+                    </div>
+                </div><!-- end col -->
+
+                <div class="col-md-4">
+                    <div class="contact-detail-box">
+                        <i class="fa fa-map-marker fa-3x text-colored"></i>
+                        <h4>Our Location</h4>
+
+                        <address>
+                            316 Baburam Acharya Sadak <br>
+                            Sinamangal, Kathmandu
+                        </address>
+                    </div>
+                </div><!-- end col -->
+
+
 
             </div>
+            <!-- end row -->
+<div class="enter"></div>
+<div class="enter"></div>
+
+            <div class="row">
+                <div class="col-md-6 pad">
+                    <div class="contact-map">
+
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15713.841410473819!2d-69.32947199999998!3d10.06131395!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2s!4v1481735102432" width="550" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>  </div>
+                </div><!-- end col -->
+
+                <!-- Contact form -->
+                <div class="col-md-6 pad">
+                    <form role="form" method="post" action="contactus.php" class="form-main">
 
 
 
+                        <div class="form-group">
+                            <label for="name2">Name</label>
+                            <input class="form-control" id="name" name="name" onblur="if(this.value == '') this.value='Name'" onfocus="if(this.value == 'Name') this.value=''" type="text" value="Name">
+                        </div> <!-- /Form-name -->
+
+                        <div class="form-group">
+                            <label for="email2">Email</label>
+                            <input class="form-control" id="email" name="email" type="text" onfocus="if(this.value == 'E-mail') this.value='';" onblur="if(this.value == '') this.value='E-mail';" value="E-mail">
+                        </div> <!-- /Form-email -->
+
+                        <div class="form-group">
+                            <label for="email2">Phone</label>
+                            <input class="form-control" id="phoneno" name="phoneno" type="text" onfocus="if(this.value == 'E-mail') this.value='';" onblur="if(this.value == '') this.value='Phone';" value="Phone">
+                        </div> <!-- /Form-Phone -->
+
+                        <div class="form-group">
+                            <label for="email2">Contact Reason</label>
+                            <input class="form-control" id="contactreason" name="contactreason" type="text" onfocus="if(this.value == 'E-mail') this.value='';" onblur="if(this.value == '') this.value='Contact Reason';" value="Contact Reason">
+                        </div> <!-- /Form-Contact Reason -->
+
+                        <div class="form-group">
+                            <label for="message2">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" onblur="if(this.value == '') this.value='Message'" onfocus="if(this.value == 'Message') this.value=''">Message</textarea>
+                        </div> <!-- /col -->
+
+                        <button type="submit" class="btn btn-primary pull-right" name="submit">Submit</button>
+
+                    </form> <!-- /form -->
+                </div> <!-- end col -->
+
+            </div> <!-- end row -->
+
+</div>
+            <div class="enter"></div>
+            <div class="enter"></div>
+            <?php include "footer.php" ?>
 
 
-    </div>
     </body>
 
 </html>
